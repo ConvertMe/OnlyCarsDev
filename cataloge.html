@@ -120,31 +120,20 @@
         </div>
       </div>
       <main class="main">
-        <section class="fs">
+        <section class="crumbs">
           <div class="_container-mini">
-            <div class="fs__container">
-              <div class="fs__content">
-                <h1 class="fs__title">OnlyCars — Ваш помощник подбора авто</h1>
-                <p class="fs__text">
-                  Мы предлагаем большой выбор легковых автомобилей, грузового и
-                  коммерческого транспорта, мототехники, спецтехники и многих
-                  других видов транспортных средств
-                </p>
-                <div class="fs__btn-border btn-border">
-                  <a href="/" class="fs__btn btn">Подобрать авто</a>
-                </div>
+            <div class="crumbs__container">
+              <div class="crumbs__crumbs">
+                <a href="/">Главная</a> <span class="arrow">→</span>
+                <span>Каталог</span>
               </div>
-              <div class="fs__image-wrapper">
-                <img src="./assets/img/cars.png" class="fs__cars" alt="" />
-              </div>
-              <img src="./assets/img/road.svg" class="fs__road" alt="" />
+              <h1 class="crumbs__title title">Каталог</h1>
             </div>
           </div>
         </section>
         <section class="selection">
           <div class="_container">
             <div class="selection__container">
-              <h2 class="selection__title">Помощник подбора авто</h2>
               <div class="selection__wrapper">
                 <form class="selection__form form" autocomplete="off">
                   <div class="form__container">
@@ -876,39 +865,644 @@
             </div>
           </div>
         </section>
-        <section class="trusttous">
-          <div class="_container">
-            <div class="trusttous__container">
-              <div class="trusttous__content">
-                <div class="trusttous__title">Или доверьте подбор нам</div>
-                <div class="trusttous__form form">
-                  <div class="form__container trusttous__form-container">
-                    <input name="name" placeholder="Имя" class="form__input" />
+        <section class="cataloge">
+          <div class="_container-mini">
+            <div class="cataloge__container">
+              <div class="cataloge__title-block">
+                <h2 class="cataloge__title title">Каталог</h2>
+                <div class="cataloge__sort">
+                  <div class="form__select-s-wrapper">
                     <input
-                      name="phone"
-                      placeholder="Телефон"
-                      class="form__input"
+                      type="hidden"
+                      name="sort"
+                      value=""
+                      class="form__hidden-input"
+                      required
                     />
-                  </div>
-                  <div class="form__container">
-                    <textarea
-                      name="message"
-                      placeholder="Какое авто вам нужно?"
-                      class="form__textarea form__input"
-                    ></textarea>
-                  </div>
-                  <div class="form__container trusttous__form-container">
-                    <button class="btn form__btn trusttous__btn">
-                      Оставить заявку
-                    </button>
-                    <div class="form__politika trusttous__politika">
-                      <span>При нажатии на кнопку, вы даёте согласие на </span
-                      ><a href="/">обработку персональных данных</a>
+                    <div class="form__select">
+                      <p class="form__placeholder">Сортировка</p>
+                      <p class="form__selected"></p>
+                      <img
+                        src="./assets/img/icons/arrow.svg"
+                        alt=""
+                        class="form__arrow"
+                      />
+                    </div>
+                    <div class="form__dropdown">
+                      <div value="По цене вверх" class="form__dd-item">
+                        <div class="form__checked"></div>
+                        <p>По цене вверх</p>
+                      </div>
+                      <div value="По цене вниз" class="form__dd-item">
+                        <div class="form__checked"></div>
+                        <p>По цене вниз</p>
+                      </div>
+                      <div value="По новизне вниз" class="form__dd-item">
+                        <div class="form__checked"></div>
+                        <p>По новизне вниз</p>
+                      </div>
+                      <div value="По новизне вверх" class="form__dd-item">
+                        <div class="form__checked"></div>
+                        <p>По новизне вверх</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <img src="./assets/img/car.png" alt="" class="trusttous__bg" />
+              <div class="cataloge__list">
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+                <div class="cataloge__item">
+                  <img
+                    src="./assets/img/compilation-car.png"
+                    alt=""
+                    class="cataloge__img"
+                  />
+                  <div class="cataloge__info">
+                    <a href="/" class="cataloge__name"
+                      >Audi A3 Sedan Design 35 TFSI tiptronic</a
+                    >
+                    <div class="cataloge__text">
+                      1.4 автомат (150 л.с.) бензин, передний привод, седан
+                    </div>
+                    <ul class="cataloge__characteristics">
+                      <li class="cataloge__ch-item clrs">
+                        <p>Цвет кузова:</p>
+                        <div class="cataloge__colors">
+                          <div style="background: green"></div>
+                          <div style="background: blue"></div>
+                          <div style="background: red"></div>
+                          <div style="background: yellow"></div>
+                        </div>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Интерьер: <span>ткань, цвет темный</span>
+                      </li>
+                      <li class="cataloge__ch-item">
+                        Описание:
+                        <span
+                          >климат, аудио, 6 Airbags, ABS, ESP, светодиоды, ЦЗ,
+                          эл. стекл, эл. зерк, круиз, д/дождя, обогрев сид,
+                          парктроник, л/диски, R17</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cataloge__content">
+                    <div class="cataloge__cost">
+                      <p class="cataloge__from">От</p>
+                      <div class="cataloge__cost-text">4 813 600 ₽</div>
+                    </div>
+                    <a href="/" class="cataloge__btn btn">Оставить заявку</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cataloge__pagination pag">
+                <a href="" class="pag__showmore btn">Показать еще</a>
+                <div class="pag__pages">
+                  <span class="pag__page">1</span>
+                  <a href="/" class="pag__page">2</a>
+                  <a href="/" class="pag__page">3</a>
+                  <a href="/" class="pag__page active">4</a>
+                  <a href="/" class="pag__page">5</a>
+                </div>
+                <a href="/" class="pag__prev pag__btn btn-w"
+                  ><span class="arrow">←</span>
+                  <span class="dn550">Предыдущая</span> </a
+                ><a href="/" class="pag__next pag__btn btn-w"
+                  ><span class="dn550">Следующая</span>
+                  <span class="arrow">→</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="compilation">
+          <div class="_container">
+            <div class="compilation__container">
+              <h2 class="compilation__title">Подборка</h2>
+              <div class="compilation__slider">
+                <div class="compilation__swiper-wrapper swiper-wrapper">
+                  <div class="compilation__slide swiper-slide">
+                    <div class="comslide">
+                      <img
+                        src="./assets/img/compilation-car.png"
+                        alt=""
+                        class="comslide__image"
+                      />
+                      <div class="comslide__content">
+                        <div class="comslide__name">
+                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
+                        </div>
+                        <div class="comslide__cost">
+                          <p class="comslide__from">От</p>
+                          <div class="comslide__cost-text">4 813 600 ₽</div>
+                        </div>
+                        <a href="/" class="comslide__btn btn"
+                          >Оставить заявку</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="compilation__slide swiper-slide">
+                    <div class="comslide">
+                      <img
+                        src="./assets/img/compilation-car.png"
+                        alt=""
+                        class="comslide__image"
+                      />
+                      <div class="comslide__content">
+                        <div class="comslide__name">
+                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
+                        </div>
+                        <div class="comslide__cost">
+                          <p class="comslide__from">От</p>
+                          <div class="comslide__cost-text">4 813 600 ₽</div>
+                        </div>
+                        <a href="/" class="comslide__btn btn"
+                          >Оставить заявку</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="compilation__slide swiper-slide">
+                    <div class="comslide">
+                      <img
+                        src="./assets/img/compilation-car.png"
+                        alt=""
+                        class="comslide__image"
+                      />
+                      <div class="comslide__content">
+                        <div class="comslide__name">
+                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
+                        </div>
+                        <div class="comslide__cost">
+                          <p class="comslide__from">От</p>
+                          <div class="comslide__cost-text">4 813 600 ₽</div>
+                        </div>
+                        <a href="/" class="comslide__btn btn"
+                          >Оставить заявку</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="compilation__slide swiper-slide">
+                    <div class="comslide">
+                      <img
+                        src="./assets/img/compilation-car.png"
+                        alt=""
+                        class="comslide__image"
+                      />
+                      <div class="comslide__content">
+                        <div class="comslide__name">
+                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
+                        </div>
+                        <div class="comslide__cost">
+                          <p class="comslide__from">От</p>
+                          <div class="comslide__cost-text">4 813 600 ₽</div>
+                        </div>
+                        <a href="/" class="comslide__btn btn"
+                          >Оставить заявку</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="compilation__slide swiper-slide">
+                    <div class="seemore">
+                      <img
+                        src="./assets/img/seemore.svg"
+                        alt=""
+                        class="seemore__image"
+                      />
+                      <a href="/cataloge.html" class="seemore__btn btn"
+                        >Показать все</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="compilation__controller">
+                  <div class="compilation__arrow compilation__arrow-prev">
+                    <svg
+                      width="11"
+                      height="19"
+                      viewBox="0 0 11 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.0303 18.7803C9.73744 19.0732 9.26256 19.0732 8.96967 18.7803L0.21967 10.0303C0.0790176 9.88968 -8.69475e-09 9.69891 0 9.5C8.69475e-09 9.30109 0.0790177 9.11032 0.21967 8.96967L8.96967 0.21967C9.26256 -0.0732233 9.73744 -0.0732233 10.0303 0.21967C10.3232 0.512563 10.3232 0.987437 10.0303 1.28033L1.81066 9.5L10.0303 17.7197C10.3232 18.0126 10.3232 18.4874 10.0303 18.7803Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="compilation__arrow compilation__arrow-next">
+                    <svg
+                      width="11"
+                      height="19"
+                      viewBox="0 0 11 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.96967 0.219669C1.26256 -0.0732231 1.73744 -0.0732231 2.03033 0.219669L10.7803 8.96967C10.921 9.11032 11 9.30109 11 9.5C11 9.69891 10.921 9.88968 10.7803 10.0303L2.03033 18.7803C1.73744 19.0732 1.26256 19.0732 0.969671 18.7803C0.676778 18.4874 0.676778 18.0126 0.969671 17.7197L9.18934 9.5L0.96967 1.28033C0.676777 0.987436 0.676777 0.512564 0.96967 0.219669Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -1261,792 +1855,11 @@
             </div>
           </div>
         </section>
-        <section class="compilation">
-          <div class="_container">
-            <div class="compilation__container">
-              <h2 class="compilation__title">Подборка</h2>
-              <div class="compilation__slider">
-                <div class="compilation__swiper-wrapper swiper-wrapper">
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="compilation__slide swiper-slide">
-                    <div class="seemore">
-                      <img
-                        src="./assets/img/seemore.svg"
-                        alt=""
-                        class="seemore__image"
-                      />
-                      <a href="/cataloge.html" class="seemore__btn btn"
-                        >Показать все</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="compilation__controller">
-                  <div class="compilation__arrow compilation__arrow-prev">
-                    <svg
-                      width="11"
-                      height="19"
-                      viewBox="0 0 11 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0303 18.7803C9.73744 19.0732 9.26256 19.0732 8.96967 18.7803L0.21967 10.0303C0.0790176 9.88968 -8.69475e-09 9.69891 0 9.5C8.69475e-09 9.30109 0.0790177 9.11032 0.21967 8.96967L8.96967 0.21967C9.26256 -0.0732233 9.73744 -0.0732233 10.0303 0.21967C10.3232 0.512563 10.3232 0.987437 10.0303 1.28033L1.81066 9.5L10.0303 17.7197C10.3232 18.0126 10.3232 18.4874 10.0303 18.7803Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="compilation__arrow compilation__arrow-next">
-                    <svg
-                      width="11"
-                      height="19"
-                      viewBox="0 0 11 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.96967 0.219669C1.26256 -0.0732231 1.73744 -0.0732231 2.03033 0.219669L10.7803 8.96967C10.921 9.11032 11 9.30109 11 9.5C11 9.69891 10.921 9.88968 10.7803 10.0303L2.03033 18.7803C1.73744 19.0732 1.26256 19.0732 0.969671 18.7803C0.676778 18.4874 0.676778 18.0126 0.969671 17.7197L9.18934 9.5L0.96967 1.28033C0.676777 0.987436 0.676777 0.512564 0.96967 0.219669Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="carrating">
-          <div class="_container">
-            <div class="carrating__container">
-              <h2 class="carrating__title title">Оценка авто</h2>
-              <form class="carrating__form form" autocomplete="off">
-                <div class="form__container-nm">
-                  <div class="carrating__options">
-                    <label class="carrating__option"
-                      ><img
-                        src="./assets/img/carraiting/1.svg"
-                        alt=""
-                        class="carrating__img" />
-                      <div class="carrating__name-wrapper">
-                        <div class="carrating__name">Выкуп авто</div>
-                        <div class="carrating__checkbox form__checkbox">
-                          <input type="checkbox" name="vikupauto" />
-                          <div>
-                            <img src="./assets/img/icons/Shape.svg" alt="" />
-                          </div>
-                        </div></div
-                    ></label>
-                    <label class="carrating__option"
-                      ><img
-                        src="./assets/img/carraiting/2.svg"
-                        alt=""
-                        class="carrating__img" />
-                      <div class="carrating__name-wrapper">
-                        <div class="carrating__name">Трейд-ин</div>
-                        <div class="carrating__checkbox form__checkbox">
-                          <input type="checkbox" name="traidin" />
-                          <div>
-                            <img src="./assets/img/icons/Shape.svg" alt="" />
-                          </div>
-                        </div></div
-                    ></label>
-                    <label class="carrating__option"
-                      ><img
-                        src="./assets/img/carraiting/3.svg"
-                        alt=""
-                        class="carrating__img" />
-                      <div class="carrating__name-wrapper">
-                        <div class="carrating__name">Комиссия</div>
-                        <div class="carrating__checkbox form__checkbox">
-                          <input type="checkbox" name="kommisia" />
-                          <div>
-                            <img src="./assets/img/icons/Shape.svg" alt="" />
-                          </div>
-                        </div></div
-                    ></label>
-                  </div>
-                  <div class="carrating__fields">
-                    <div class="form__container">
-                      <input
-                        name="name"
-                        placeholder="Имя"
-                        class="form__input"
-                      />
-                      <input
-                        name="phone"
-                        placeholder="Телефон"
-                        class="form__input"
-                      />
-                      <div class="form__select-s-wrapper">
-                        <input
-                          type="hidden"
-                          name="marka"
-                          value=""
-                          class="form__hidden-input"
-                          required
-                        />
-                        <div class="form__select">
-                          <p class="form__placeholder">Марка</p>
-                          <p class="form__selected"></p>
-                          <img
-                            src="./assets/img/icons/arrow.svg"
-                            alt=""
-                            class="form__arrow"
-                          />
-                        </div>
-                        <div class="form__dropdown">
-                          <div class="form__dd-search">
-                            <input class="form__dd-input" placeholder="Поиск" />
-                            <img
-                              src="./assets/img/icons/search.svg"
-                              alt=""
-                              class="form__dd-icon"
-                            />
-                          </div>
-                          <div value="Audi" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>Audi</p>
-                          </div>
-                          <div value="BMW" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>BMW</p>
-                          </div>
-                          <div value="Lada" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>Lada</p>
-                          </div>
-                          <div value="Renault" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>Renault</p>
-                          </div>
-                          <div value="Peugeot" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>Peugeot</p>
-                          </div>
-                          <div value="Lexus" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>Lexus</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__container">
-                      <div class="form__select-s-wrapper">
-                        <input
-                          type="hidden"
-                          name="model"
-                          value=""
-                          class="form__hidden-input"
-                          required
-                        />
-                        <div class="form__select">
-                          <p class="form__placeholder">Модель</p>
-                          <p class="form__selected"></p>
-                          <img
-                            src="./assets/img/icons/arrow.svg"
-                            alt=""
-                            class="form__arrow"
-                          />
-                        </div>
-                        <div class="form__dropdown">
-                          <div class="form__dd-search">
-                            <input class="form__dd-input" placeholder="Поиск" />
-                            <img
-                              src="./assets/img/icons/search.svg"
-                              alt=""
-                              class="form__dd-icon"
-                            />
-                          </div>
-                          <div value="X1" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>X1</p>
-                          </div>
-                          <div value="X2" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>X2</p>
-                          </div>
-                          <div value="X6" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>X6</p>
-                          </div>
-                          <div value="XG" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>XG</p>
-                          </div>
-                          <div value="GX" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>GX</p>
-                          </div>
-                          <div value="XGX" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>XGX</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form__select-s-wrapper">
-                        <input
-                          type="hidden"
-                          name="year"
-                          value=""
-                          class="form__hidden-input"
-                          required
-                        />
-                        <div class="form__select">
-                          <p class="form__placeholder">Год выпуска</p>
-                          <p class="form__selected"></p>
-                          <img
-                            src="./assets/img/icons/arrow.svg"
-                            alt=""
-                            class="form__arrow"
-                          />
-                        </div>
-                        <div class="form__dropdown">
-                          <div class="form__dd-search">
-                            <input
-                              type="number"
-                              class="form__dd-input year"
-                              placeholder="Ввод года"
-                            />
-                          </div>
-                          <div value="2000" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>2000</p>
-                          </div>
-                          <div value="2001" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>2001</p>
-                          </div>
-                          <div value="2002" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>2002</p>
-                          </div>
-                          <div value="2003" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>2003</p>
-                          </div>
-                          <div value="2004" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>2004</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__container-nm carrating__politika-cont">
-                      <button class="btn form__btn">Оценить авто</button>
-                      <div class="form__politika carrating__politika">
-                        <span>При нажатии на кнопку, вы даёте согласие на </span
-                        ><a href="/">обработку персональных данных</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-        <script>
-          document
-            .querySelectorAll(".carrating__checkbox > input")
-            .forEach((el) => {
-              el.addEventListener("change", () => {
-                el.closest(".carrating__option").classList.toggle("active");
-              });
-            });
-        </script>
-        <section class="credit">
-          <div class="_container">
-            <div class="credit__container">
-              <section class="credit__left">
-                <h2 class="credit__title title">Авто в кредит</h2>
-                <form class="credit__form form" autocomplete="off">
-                  <div class="credit__b-container">
-                    <div class="form__container">
-                      <div class="form__select-s-wrapper selected range">
-                        <div class="form__placeholder">Сумма</div>
-                        <div class="form__r">₽</div>
-                        <input
-                          placeholder="300 000"
-                          name="credit"
-                          class="form__select form__range-input selected"
-                          value="300 000"
-                        />
-                        <input
-                          type="range"
-                          min="300000"
-                          max="10000000"
-                          value="300000"
-                          class="form__range"
-                        />
-                      </div>
-                    </div>
-                    <div class="form__container">
-                      <div class="form__select-s-wrapper">
-                        <input
-                          type="hidden"
-                          name="srok"
-                          value=""
-                          class="form__hidden-input"
-                          required
-                        />
-                        <div class="form__select">
-                          <p class="form__placeholder">Срок</p>
-                          <p class="form__selected"></p>
-                          <img
-                            src="./assets/img/icons/arrow.svg"
-                            alt=""
-                            class="form__arrow"
-                          />
-                        </div>
-                        <div class="form__dropdown">
-                          <div class="form__dd-search">
-                            <input class="form__dd-input" placeholder="Поиск" />
-                            <img
-                              src="./assets/img/icons/search.svg"
-                              alt=""
-                              class="form__dd-icon"
-                            />
-                          </div>
-                          <div value="1 месяц" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>1 месяц</p>
-                          </div>
-                          <div value="3 месяца" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>3 месяца</p>
-                          </div>
-                          <div value="6 месяцев" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>6 месяцев</p>
-                          </div>
-                          <div value="12 месяцев" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>12 месяцев</p>
-                          </div>
-                          <div value="18 месяцев" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>18 месяцев</p>
-                          </div>
-                          <div value="24 месяца" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>24 месяца</p>
-                          </div>
-                          <div value="36 месяцев" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>36 месяцев</p>
-                          </div>
-                          <div value="48 месяцев" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>48 месяцев</p>
-                          </div>
-                          <div value="60 месяцев" class="form__dd-item">
-                            <div class="form__checked"></div>
-                            <p>60 месяцев</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__container">
-                      <input name="fio" placeholder="ФИО" class="form__input" />
-                    </div>
-                    <div class="form__container">
-                      <input
-                        name="phone"
-                        placeholder="Телефон"
-                        class="form__input"
-                      />
-                    </div>
-                  </div>
-                  <div class="credit__b-container">
-                    <div class="credit__information">
-                      <div class="credit__information_block">
-                        <p class="credit__information_name">Ставка:</p>
-                        <div class="credit__information_number">
-                          <span>от</span>
-                          <p class="credit__procent">6%</p>
-                        </div>
-                      </div>
-                      <div class="credit__information_block">
-                        <p class="credit__information_name">Платёж:</p>
-                        <div class="credit__information_number">
-                          <p class="credit__dynamic-cost">0 ₽</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__container-nm credit__politika-cont">
-                      <button class="btn form__btn">Оставить заявку</button>
-                      <div class="form__politika credit__politika">
-                        <span>При нажатии на кнопку, вы даёте согласие на </span
-                        ><a href="/">обработку персональных данных</a>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </section>
-              <section class="credit__right">
-                <h2 class="credit__title title">Банки-партнёры</h2>
-                <div class="credit__banks banks">
-                  <div class="banks__list">
-                    <div class="banks__item">
-                      <div class="banks__logo-w">
-                        <img
-                          src="./assets/img/banklogo.svg"
-                          alt=""
-                          class="banks__logo"
-                        />
-                      </div>
-                      <div class="banks__info">
-                        <p class="banks__text">
-                          Кредит на покупку автомобиля онлайн
-                        </p>
-                        <div class="banks__numbers">
-                          <div class="banks__bld">от 3.9 до 8.9%</div>
-                          <div class="banks__stndrt">
-                            от 10 тыс. до 3 млн<br />от 1 до 84 мес.
-                          </div>
-                        </div>
-                      </div>
-                      <a href="/" class="banks__btn-w btn-w">Подать заявку</a>
-                    </div>
-                    <div class="banks__item">
-                      <div class="banks__logo-w">
-                        <img
-                          src="./assets/img/banklogo.svg"
-                          alt=""
-                          class="banks__logo"
-                        />
-                      </div>
-                      <div class="banks__info">
-                        <p class="banks__text">
-                          Кредит на покупку автомобиля онлайн
-                        </p>
-                        <div class="banks__numbers">
-                          <div class="banks__bld">от 3.9 до 8.9%</div>
-                          <div class="banks__stndrt">
-                            от 10 тыс. до 3 млн<br />от 1 до 84 мес.
-                          </div>
-                        </div>
-                      </div>
-                      <a href="/" class="banks__btn-w btn-w">Подать заявку</a>
-                    </div>
-                    <div class="banks__item">
-                      <div class="banks__logo-w">
-                        <img
-                          src="./assets/img/banklogo.svg"
-                          alt=""
-                          class="banks__logo"
-                        />
-                      </div>
-                      <div class="banks__info">
-                        <p class="banks__text">
-                          Кредит на покупку автомобиля онлайн
-                        </p>
-                        <div class="banks__numbers">
-                          <div class="banks__bld">от 3.9 до 8.9%</div>
-                          <div class="banks__stndrt">
-                            от 10 тыс. до 3 млн<br />от 1 до 84 мес.
-                          </div>
-                        </div>
-                      </div>
-                      <a href="/" class="banks__btn-w btn-w">Подать заявку</a>
-                    </div>
-                    <div class="banks__item">
-                      <div class="banks__logo-w">
-                        <img
-                          src="./assets/img/banklogo.svg"
-                          alt=""
-                          class="banks__logo"
-                        />
-                      </div>
-                      <div class="banks__info">
-                        <p class="banks__text">
-                          Кредит на покупку автомобиля онлайн
-                        </p>
-                        <div class="banks__numbers">
-                          <div class="banks__bld">от 3.9 до 8.9%</div>
-                          <div class="banks__stndrt">
-                            от 10 тыс. до 3 млн<br />от 1 до 84 мес.
-                          </div>
-                        </div>
-                      </div>
-                      <a href="/" class="banks__btn-w btn-w">Подать заявку</a>
-                    </div>
-                  </div>
-                  <a href="/" class="banks__seemore"
-                    >Смотреть еще предложения</a
-                  >
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
-        <section class="carinsurance">
-          <div class="_container">
-            <div class="carinsurance__container">
-              <div class="carinsurance__content">
-                <div class="carinsurance__title">Автострахование</div>
-                <div class="carinsurance__text">
-                  Введите госномер, мы автоматически<br />заполним данные по
-                  авто
-                </div>
-                <form class="carinsurance__form form">
-                  <div class="form__container">
-                    <div class="carinsurance__input-cont">
-                      <input
-                        placeholder="A 000 AA 777"
-                        name="gosnomer"
-                        class="form__input"
-                      />
-                      <span>Используйте русские буквы</span>
-                    </div>
-                    <input placeholder="Имя" name="Имя" class="form__input" />
-                    <input
-                      placeholder="Телефон"
-                      name="Телефон"
-                      class="form__input"
-                    />
-                    <button class="btn carinsurance__btn">
-                      Рассчитать стоимость
-                    </button>
-                  </div>
-                  <div class="form__politika">
-                    <span>При нажатии на кнопку, вы даёте согласие на </span
-                    ><a href="/">обработку персональных данных</a>
-                  </div>
-                </form>
-              </div>
-              <img
-                src="./assets/img/carinsurance.png"
-                alt=""
-                class="carinsurance__bg"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="compilation">
-          <div class="_container">
-            <div class="compilation__container">
-              <h2 class="compilation__title">Просмотренные ранее</h2>
-              <div class="compilation__slider">
-                <div class="compilation__swiper-wrapper swiper-wrapper">
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="compilation__slide swiper-slide">
-                    <div class="comslide">
-                      <img
-                        src="./assets/img/compilation-car.png"
-                        alt=""
-                        class="comslide__image"
-                      />
-                      <div class="comslide__content">
-                        <div class="comslide__name">
-                          Audi A5 Sportback II (F5) Audi A5 Sportback II (F5)
-                        </div>
-                        <div class="comslide__cost">
-                          <p class="comslide__from">От</p>
-                          <div class="comslide__cost-text">4 813 600 ₽</div>
-                        </div>
-                        <a href="/" class="comslide__btn btn"
-                          >Оставить заявку</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="compilation__controller">
-                  <div class="compilation__arrow compilation__arrow-prev">
-                    <svg
-                      width="11"
-                      height="19"
-                      viewBox="0 0 11 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0303 18.7803C9.73744 19.0732 9.26256 19.0732 8.96967 18.7803L0.21967 10.0303C0.0790176 9.88968 -8.69475e-09 9.69891 0 9.5C8.69475e-09 9.30109 0.0790177 9.11032 0.21967 8.96967L8.96967 0.21967C9.26256 -0.0732233 9.73744 -0.0732233 10.0303 0.21967C10.3232 0.512563 10.3232 0.987437 10.0303 1.28033L1.81066 9.5L10.0303 17.7197C10.3232 18.0126 10.3232 18.4874 10.0303 18.7803Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="compilation__arrow compilation__arrow-next">
-                    <svg
-                      width="11"
-                      height="19"
-                      viewBox="0 0 11 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.96967 0.219669C1.26256 -0.0732231 1.73744 -0.0732231 2.03033 0.219669L10.7803 8.96967C10.921 9.11032 11 9.30109 11 9.5C11 9.69891 10.921 9.88968 10.7803 10.0303L2.03033 18.7803C1.73744 19.0732 1.26256 19.0732 0.969671 18.7803C0.676778 18.4874 0.676778 18.0126 0.969671 17.7197L9.18934 9.5L0.96967 1.28033C0.676777 0.987436 0.676777 0.512564 0.96967 0.219669Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <style>
+          .brands {
+            padding-bottom: 0 !important;
+          }
+        </style>
         <section class="aboutcompany">
           <div class="_container-mini">
             <div class="aboutcompany__text textcontent">
@@ -2125,148 +1938,6 @@
             <div class="aboutcompany__readmore">
               <p>Подробнее</p>
               <img src="./assets/img/icons/arrow-red.svg" alt="" />
-            </div>
-          </div>
-        </section>
-        <section class="news">
-          <div class="_container-mini">
-            <div class="news__container">
-              <h2 class="news__title title">Новости</h2>
-              <div class="news__main-grid">
-                <div class="news__item">
-                  <a href="/" class="news__link"></a>
-                  <div class="news__item-container">
-                    <div class="news__image">
-                      <img
-                        src="./assets/img/news.png"
-                        alt=""
-                        class="news__img"
-                      />
-                    </div>
-                    <div class="news__content">
-                      <h3 class="news__title-n">
-                        Умелец из Пензы сам построил Lamborghini. Теперь продаёт
-                        за небольшие деньги
-                      </h3>
-                      <div class="news__date">
-                        <img
-                          src="./assets/img/icons/date.svg"
-                          alt=""
-                          class="news__date_icon"
-                        />
-                        <div class="news__date-text">12.01.22</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news__child-grid">
-                  <div class="news__item">
-                    <a href="/" class="news__link"></a>
-                    <div class="news__item-container">
-                      <div class="news__image">
-                        <img
-                          src="./assets/img/news.png"
-                          alt=""
-                          class="news__img"
-                        />
-                      </div>
-                      <div class="news__content">
-                        <h3 class="news__title-n">
-                          В России стартовали продажи нового кроссовера FAW
-                          Bestune
-                        </h3>
-                        <div class="news__date">
-                          <img
-                            src="./assets/img/icons/date.svg"
-                            alt=""
-                            class="news__date_icon"
-                          />
-                          <div class="news__date-text">12.01.22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news__item">
-                    <a href="/" class="news__link"></a>
-                    <div class="news__item-container">
-                      <div class="news__image">
-                        <img
-                          src="./assets/img/news.png"
-                          alt=""
-                          class="news__img"
-                        />
-                      </div>
-                      <div class="news__content">
-                        <h3 class="news__title-n">
-                          В России стартовали продажи нового кроссовера FAW
-                          Bestune
-                        </h3>
-                        <div class="news__date">
-                          <img
-                            src="./assets/img/icons/date.svg"
-                            alt=""
-                            class="news__date_icon"
-                          />
-                          <div class="news__date-text">12.01.22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news__item">
-                    <a href="/" class="news__link"></a>
-                    <div class="news__item-container">
-                      <div class="news__image">
-                        <img
-                          src="./assets/img/news.png"
-                          alt=""
-                          class="news__img"
-                        />
-                      </div>
-                      <div class="news__content">
-                        <h3 class="news__title-n">
-                          В России стартовали продажи нового кроссовера FAW
-                          Bestune
-                        </h3>
-                        <div class="news__date">
-                          <img
-                            src="./assets/img/icons/date.svg"
-                            alt=""
-                            class="news__date_icon"
-                          />
-                          <div class="news__date-text">12.01.22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news__item">
-                    <a href="/" class="news__link"></a>
-                    <div class="news__item-container">
-                      <div class="news__image">
-                        <img
-                          src="./assets/img/news.png"
-                          alt=""
-                          class="news__img"
-                        />
-                      </div>
-                      <div class="news__content">
-                        <h3 class="news__title-n">
-                          В России стартовали продажи нового кроссовера FAW
-                          Bestune
-                        </h3>
-                        <div class="news__date">
-                          <img
-                            src="./assets/img/icons/date.svg"
-                            alt=""
-                            class="news__date_icon"
-                          />
-                          <div class="news__date-text">12.01.22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a href="/" class="news__more btn">Больше материалов</a>
             </div>
           </div>
         </section>
